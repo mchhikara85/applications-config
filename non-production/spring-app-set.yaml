@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
-  name: spring-app
+  name: spring-app-set
 spec:
   generators:
     - list:
