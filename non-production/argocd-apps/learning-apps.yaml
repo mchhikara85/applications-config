@@ -4,6 +4,8 @@ metadata:
   name: applications-config-learning-apps
 spec:
   source:
+    directory:
+      recurse: true
     repoURL: https://github.com/mchhikara85/applications-config
     targetRevision: main
     path: non-production/learning-apps
