@@ -1,0 +1,25 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: spring-app
+spec:
+  generators:
+    - list:
+        elements:
+          - environment: dev
+            path: overlays/dev
+  template:
+    metadata:
+      name: spring-app
+    spec:
+      source:
+        repoURL: https://github.com/mchhikara85/learn-spring-deploy
+        targetRevision: main
+        path: '{{path}}'
+      destination:
+        namespace: learning
+        url: https://kubernetes.default.svc
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true
