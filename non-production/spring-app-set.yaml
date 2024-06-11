@@ -10,7 +10,7 @@ spec:
             path: overlays/dev
   template:
     metadata:
-      name: spring-app
+      name: spring-app-{{environment}}
     spec:
       source:
         repoURL: https://github.com/mchhikara85/learn-spring-deploy
