@@ -8,6 +8,8 @@ spec:
         elements:
           - environment: dev
             path: overlays/dev
+          - environment: qa
+            path: overlays/dev
   template:
     metadata:
       name: spring-app-{{environment}}
