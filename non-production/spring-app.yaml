@@ -19,6 +19,7 @@ spec:
       destination:
         namespace: learning
         url: https://kubernetes.default.svc
+      project: my-learning
       syncPolicy:
         automated:
           prune: true
