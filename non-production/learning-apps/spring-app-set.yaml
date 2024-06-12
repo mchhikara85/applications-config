@@ -19,7 +19,7 @@ spec:
       destination:
         namespace: learning-{{environment}}
         server: https://kubernetes.default.svc
-      project: learning-dev
+      project: learning-apps
       syncPolicy:
         automated:
           prune: true
