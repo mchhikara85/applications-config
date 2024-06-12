@@ -11,7 +11,7 @@ spec:
       name: spring-app-{{environment}}
     spec:
       source:
-        repoURL: https://github.com/mchhikara85/learn-spring-deploy
+        repoURL: https://github.com/mchhikara85/learn-spring-deploy1
         targetRevision: main
         path: '{{path}}'
       destination:
